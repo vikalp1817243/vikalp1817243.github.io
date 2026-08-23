@@ -1,0 +1,27 @@
+# Node
+server/node_modules/
+server/.env
+*.env
+
+# Planning and Dev Scripts
+implementation_plan.md
+phase_*.md
+crop_certs.py
+fix_*.py
+
+# Sensitive Certs (keep previews if needed, but PDFs usually not committed unless intended)
+# Cert/*.pdf
+# Certificates/*.pdf
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python
+*.pyc
+__pycache__/

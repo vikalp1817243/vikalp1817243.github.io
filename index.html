@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Primary SEO Metadata -->
+  <title>Vikalp Pratap Yadav | Portfolio - Web Developer & Cybersecurity Professional</title>
+  <meta name="description" content="Explore the cybersecurity and web development portfolio of Vikalp Pratap Yadav, featuring SOC honeypot pipelines, interactive tools, and credentials." />
+  <meta name="keywords" content="Vikalp Pratap Yadav, Cybersecurity, Web Developer, SIEM, Wazuh, FastAPI, Penetration Testing, Portfolio" />
+  <meta name="author" content="Vikalp Pratap Yadav" />
+  <link rel="canonical" href="https://vikalppratap.github.io" />
+
+  <!-- Open Graph / Facebook Previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vikalppratap.github.io" />
+  <meta property="og:title" content="Vikalp Pratap Yadav | Portfolio - Web Developer & Cybersecurity Professional" />
+  <meta property="og:description" content="Explore the cybersecurity and web development portfolio of Vikalp Pratap Yadav, featuring SOC honeypot pipelines, interactive tools, and credentials." />
+  <meta property="og:image" content="https://vikalppratap.github.io/assets/demon.png" />
+
+  <!-- Twitter Card Previews -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://vikalppratap.github.io" />
+  <meta property="twitter:title" content="Vikalp Pratap Yadav | Portfolio - Web Developer & Cybersecurity Professional" />
+  <meta property="twitter:description" content="Explore the cybersecurity and web development portfolio of Vikalp Pratap Yadav, featuring SOC honeypot pipelines, interactive tools, and credentials." />
+  <meta property="twitter:image" content="https://vikalppratap.github.io/assets/demon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'cyber-bg': '#0a0a0f',
+            'cyber-card': '#12121a',
+            'neon-green': '#39ff14',
+            'neon-magenta': '#ff00e5',
+            'neon-purple': '#b400ff',
+            'dark-pink': '#ff1493',
+            'blood-red': '#dc143c',
+            'text-main': '#e0e0e0',
+            'text-muted': '#8888aa',
+          },
+          fontFamily: {
+            orbitron: ['Orbitron', 'sans-serif'],
+            rajdhani: ['Rajdhani', 'sans-serif'],
+            mono: ['Share Tech Mono', 'monospace'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="scanlines">
+  <!-- ===== PARTICLE BACKGROUND ===== -->
+  <div id="particles-bg"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header role="banner">
+    <nav class="navbar px-6 py-4 flex items-center justify-between" id="navbar" role="navigation">
+      <a href="#home" class="nav-brand neon-text">PORTFOLIO</a>
+
+      <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </div>
+
+      <ul class="nav-links flex gap-2 lg:gap-4 xl:gap-6 list-none" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#activities" class="nav-link">Activities</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="section-container transparent min-h-screen flex items-center px-6 md:px-16 lg:px-24 pt-32 md:pt-20">
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <!-- Left: Text -->
+      <div class="fade-in-left">
+        <p class="font-mono text-sm md:text-base text-neon-green uppercase tracking-widest mb-2">
+          [system_status: online]
+        </p>
+        <p class="font-mono text-text-muted text-lg mb-2">&gt; Hello, I am</p>
+        <h1 class="font-orbitron text-4xl md:text-6xl font-bold mb-2">
+          <span id="typing-text"></span><span class="typing-cursor"></span>
+        </h1>
+        <p class="font-rajdhani text-xl text-text-muted mt-4 mb-8">Cybersecurity Student | Blue Team & SOC Enthusiast | Frontend Developer</p>
+        <!-- Buttons for Desktop -->
+        <div class="hidden md:flex gap-4 flex-wrap">
+          <a href="VikalpResume.pdf" target="_blank" rel="noopener noreferrer" class="btn-neon"><i class="fas fa-file-pdf"></i> Resume</a>
+          <a href="https://0xv1k4l9.gitbook.io/0xv1k4l9" target="_blank" rel="noopener noreferrer" class="btn-neon btn-neon-purple"><i class="fas fa-book-open"></i> Writeups</a>
+          <a href="#contact" class="btn-neon btn-neon-pink"><i class="fas fa-envelope"></i> Contact Me</a>
+        </div>
+      </div>
+
+      <!-- Right: Profile Image with Glitch -->
+      <div class="fade-in-right flex flex-col items-center justify-center">
+        <div class="neon-ring w-64 h-64 md:w-80 md:h-80" style="animation: ring-rotate 4s linear infinite, float-y 4s ease-in-out infinite;">
+          <div class="glitch-img-container w-full h-full rounded-full overflow-hidden relative" style="z-index:1;">
+            <img src="assets/demon.png" alt="Vikalp Profile" class="w-full h-full object-cover rounded-full" />
+          </div>
+        </div>
+        <!-- Buttons for Mobile -->
+        <div class="flex md:hidden gap-4 flex-wrap mt-8 justify-center">
+          <a href="VikalpResume.pdf" target="_blank" rel="noopener noreferrer" class="btn-neon"><i class="fas fa-file-pdf"></i> Resume</a>
+          <a href="https://0xv1k4l9.gitbook.io/0xv1k4l9" target="_blank" rel="noopener noreferrer" class="btn-neon btn-neon-purple"><i class="fas fa-book-open"></i> Writeups</a>
+          <a href="#contact" class="btn-neon btn-neon-pink"><i class="fas fa-envelope"></i> Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section-container py-24 px-6 md:px-16 lg:px-24">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="section-title neon-text fade-in-up mx-auto">About Me</h2>
+      <div class="glass-card p-8 md:p-12 mt-8 fade-in-up delay-2">
+        <p class="text-lg leading-relaxed text-text-main">
+          B.Tech student in <span class="text-neon-green font-bold">Cyber Security & Digital Forensics</span>. Focused on <span class="text-dark-pink font-bold">Blue Team operations</span>, <span class="text-blood-red font-bold">SOC analysis</span>, and threat detection. Building frontend skills with HTML, CSS, JS &mdash; currently learning MERN.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
+          <div class="text-center">
+            <p class="font-orbitron text-3xl font-bold text-neon-green neon-text">8.42</p>
+            <p class="text-text-muted text-sm mt-1">CGPA</p>
+          </div>
+          <div class="text-center">
+            <p class="font-orbitron text-3xl font-bold text-dark-pink neon-text-pink">4+</p>
+            <p class="text-text-muted text-sm mt-1">Projects</p>
+          </div>
+          <div class="text-center">
+            <p class="font-orbitron text-3xl font-bold text-blood-red neon-text-red">7+</p>
+            <p class="text-text-muted text-sm mt-1">Certifications</p>
+          </div>
+          <div class="text-center">
+            <p class="font-orbitron text-3xl font-bold text-neon-purple neon-text-magenta">Top 2%</p>
+            <p class="text-text-muted text-sm mt-1">TryHackMe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section-container py-24 px-6 md:px-16 lg:px-24">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center">
+        <h2 class="section-title neon-text fade-in-up mx-auto">Projects</h2>
+      </div>
+
+      <div class="timeline mt-12 relative pb-8">
+        <div class="timeline-progress"></div>
+
+        <!-- Project 1 — Left -->
+        <div class="zigzag-item left fade-in-left mb-16 relative">
+          <div class="timeline-dot" style="top: 30px;"></div>
+          <div class="glass-card p-6 cursor-default">
+            <h3 class="font-orbitron text-xl font-bold text-neon-green mb-2">Distributed Monitoring Pipeline</h3>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="skill-pill text-xs">Wazuh</span>
+              <span class="skill-pill text-xs">Docker</span>
+              <span class="skill-pill text-xs">Cowrie</span>
+              <span class="skill-pill text-xs">Ubuntu</span>
+              <span class="skill-pill text-xs">Kali Linux</span>
+            </div>
+            <ul class="text-sm text-text-main space-y-2 list-none">
+              <li>• Engineered a 3-host virtualized SOC — Wazuh SIEM cluster, Cowrie honeypot endpoint, and Kali adversary simulator.</li>
+              <li>• Authored custom Wazuh decoder &amp; rule XML templates (Rules 100100–100103) achieving 100% data fidelity.</li>
+              <li>• Validated pipeline with Hydra brute-force attacks, confirming MITRE ATT&amp;CK mapped alerts.</li>
+            </ul>
+            <a href="https://github.com/vikalp1817243" target="_blank" rel="noopener" class="btn-neon text-xs mt-4 inline-flex"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 2 — Right -->
+        <div class="zigzag-item right fade-in-right mb-16 relative">
+          <div class="timeline-dot" style="top: 30px;"></div>
+          <div class="glass-card p-6 cursor-default">
+            <h3 class="font-orbitron text-xl font-bold text-dark-pink mb-2">Marks Dashboard</h3>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="skill-pill text-xs">Python</span>
+              <span class="skill-pill text-xs">FastAPI</span>
+              <span class="skill-pill text-xs">WebSockets</span>
+              <span class="skill-pill text-xs">HTML/CSS/JS</span>
+            </div>
+            <ul class="text-sm text-text-main space-y-2 list-none">
+              <li>• Deployed on Railway serving <strong class="text-dark-pink">200+ active users</strong> and handling 840+ real-time requests.</li>
+              <li>• Engineered anonymous peer-driven grading with Bell Curve &amp; scatter plots.</li>
+              <li>• WebSocket-powered live dashboards with MySQL backend &amp; 24-hour auto-deletion.</li>
+            </ul>
+            <a href="https://github.com/vikalp1817243" target="_blank" rel="noopener" class="btn-neon btn-neon-pink text-xs mt-4 inline-flex"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 3 — Left -->
+        <div class="zigzag-item left fade-in-left mb-16 relative">
+          <div class="timeline-dot" style="top: 30px;"></div>
+          <div class="glass-card p-6 cursor-default">
+            <h3 class="font-orbitron text-xl font-bold text-blood-red mb-2">Security Reconnaissance &amp; Automation Tools</h3>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="skill-pill text-xs">Python</span>
+              <span class="skill-pill text-xs">Sockets</span>
+              <span class="skill-pill text-xs">ThreadPoolExecutor</span>
+            </div>
+            <ul class="text-sm text-text-main space-y-2 list-none">
+              <li>• Multi-threaded Subdomain Discovery Engine &amp; Network Service Scanner.</li>
+              <li>• Reconnaissance, Enumeration, and Cryptography tool suite.</li>
+              <li>• Automated DNS recon (A, MX, TXT, SOA records) using dnspython.</li>
+            </ul>
+            <a href="https://github.com/vikalp1817243" target="_blank" rel="noopener" class="btn-neon text-xs mt-4 inline-flex" style="border-color:var(--blood-red);color:var(--blood-red);"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 4 — Right -->
+        <div class="zigzag-item right fade-in-right mb-4 relative">
+          <div class="timeline-dot" style="top: 30px;"></div>
+          <div class="glass-card p-6 cursor-default">
+            <h3 class="font-orbitron text-xl font-bold text-neon-purple mb-2">Kitchen Order Ticket (KOT) System</h3>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="skill-pill text-xs">Java</span>
+              <span class="skill-pill text-xs">Multithreading</span>
+              <span class="skill-pill text-xs">JDBC</span>
+              <span class="skill-pill text-xs">MySQL</span>
+            </div>
+            <ul class="text-sm text-text-main space-y-2 list-none">
+              <li>• Designed a multithreaded restaurant order system using a Producer-Consumer threading model.</li>
+              <li>• Safely processed concurrent order streams using synchronized shared queues (wait()/notifyAll()).</li>
+              <li>• Integrated JDBC with MySQL to log processed orders across 60 food items on a real-time dashboard.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section-container py-24 px-6 md:px-16 lg:px-24">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center">
+        <h2 class="section-title neon-text fade-in-up mx-auto">Skills</h2>
+      </div>
+      <div class="text-center mt-2 mb-10 fade-in-up delay-1">
+        <button id="skill-toggle" class="btn-neon text-xs">Switch to Bubbles</button>
+      </div>
+
+      <!-- Marquee View -->
+      <div id="skills-marquee" class="space-y-6 fade-in-up delay-2">
+        <!-- Row 1: Languages -->
+        <div class="overflow-hidden marquee-left">
+          <div class="marquee-track">
+            <span class="skill-pill"><i class="fab fa-java"></i> Java</span>
+            <span class="skill-pill"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-pill">C++</span>
+            <span class="skill-pill"><i class="fas fa-database"></i> SQL</span>
+            <span class="skill-pill">Bash</span>
+            <span class="skill-pill"><i class="fab fa-html5"></i> HTML</span>
+            <span class="skill-pill"><i class="fab fa-css3-alt"></i> CSS</span>
+            <span class="skill-pill"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="skill-pill"><i class="fab fa-java"></i> Java</span>
+            <span class="skill-pill"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-pill">C++</span>
+            <span class="skill-pill"><i class="fas fa-database"></i> SQL</span>
+            <span class="skill-pill">Bash</span>
+            <span class="skill-pill"><i class="fab fa-html5"></i> HTML</span>
+            <span class="skill-pill"><i class="fab fa-css3-alt"></i> CSS</span>
+            <span class="skill-pill"><i class="fab fa-js"></i> JavaScript</span>
+          </div>
+        </div>
+        <!-- Row 2: Tools -->
+        <div class="overflow-hidden marquee-right">
+          <div class="marquee-track-reverse">
+            <span class="skill-pill">Wazuh</span>
+            <span class="skill-pill">Wireshark</span>
+            <span class="skill-pill">Nmap</span>
+            <span class="skill-pill">Burp Suite</span>
+            <span class="skill-pill">Hydra</span>
+            <span class="skill-pill">Wazuh</span>
+            <span class="skill-pill">Wireshark</span>
+            <span class="skill-pill">Nmap</span>
+            <span class="skill-pill">Burp Suite</span>
+            <span class="skill-pill">Hydra</span>
+            <span class="skill-pill">Wazuh</span>
+            <span class="skill-pill">Wireshark</span>
+            <span class="skill-pill">Nmap</span>
+            <span class="skill-pill">Burp Suite</span>
+            <span class="skill-pill">Hydra</span>
+          </div>
+        </div>
+        <!-- Row 3: Platforms -->
+        <div class="overflow-hidden marquee-left">
+          <div class="marquee-track">
+            <span class="skill-pill"><i class="fab fa-linux"></i> Linux</span>
+            <span class="skill-pill"><i class="fab fa-docker"></i> Docker</span>
+            <span class="skill-pill"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="skill-pill">Virtualization</span>
+            <span class="skill-pill"><i class="fab fa-linux"></i> Linux</span>
+            <span class="skill-pill"><i class="fab fa-docker"></i> Docker</span>
+            <span class="skill-pill"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="skill-pill">Virtualization</span>
+            <span class="skill-pill"><i class="fab fa-linux"></i> Linux</span>
+            <span class="skill-pill"><i class="fab fa-docker"></i> Docker</span>
+            <span class="skill-pill"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="skill-pill">Virtualization</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="skills-bubbles" class="hidden h-[500px] relative mt-8 fade-in-up delay-2">
+        <div class="bubble text-neon-green" style="top:10%; left:20%; width:80px; height:80px; animation-duration:12s;">Java</div>
+        <div class="bubble text-dark-pink" style="top:30%; left:50%; width:90px; height:90px; animation-duration:15s;">Python</div>
+        <div class="bubble text-neon-purple" style="top:60%; left:15%; width:70px; height:70px; animation-duration:10s;">C++</div>
+        <div class="bubble text-blood-red" style="top:20%; left:75%; width:85px; height:85px; animation-duration:14s;">SQL</div>
+        <div class="bubble text-neon-green" style="top:75%; left:40%; width:60px; height:60px; animation-duration:11s;">Bash</div>
+        <div class="bubble text-dark-pink" style="top:80%; left:70%; width:75px; height:75px; animation-duration:13s;">Wazuh</div>
+        <div class="bubble text-neon-purple" style="top:40%; left:85%; width:80px; height:80px; animation-duration:16s;">Wireshark</div>
+        <div class="bubble text-blood-red" style="top:15%; left:35%; width:65px; height:65px; animation-duration:12s;">Nmap</div>
+        <div class="bubble text-neon-green" style="top:55%; left:65%; width:70px; height:70px; animation-duration:14s;">Hydra</div>
+        <div class="bubble text-dark-pink" style="top:45%; left:25%; width:85px; height:85px; animation-duration:17s;">Linux</div>
+        <div class="bubble text-neon-purple" style="top:65%; left:80%; width:75px; height:75px; animation-duration:11s;">Docker</div>
+        <div class="bubble text-blood-red" style="top:25%; left:10%; width:60px; height:60px; animation-duration:15s;">Git</div>
+        <div class="bubble text-neon-green" style="top:85%; left:25%; width:70px; height:70px; animation-duration:14s;">Virtualization</div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="section-container py-24 px-6 md:px-16 lg:px-24">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center">
+        <h2 class="section-title neon-text-pink fade-in-up mx-auto">Education</h2>
+      </div>
+
+      <div class="timeline mt-12 relative pb-8">
+        <div class="timeline-progress"></div>
+
+        <!-- Education 1 — Left (Current) -->
+        <div class="zigzag-item left fade-in-left mb-16 relative">
+          <div class="timeline-dot" style="top: 30px;"></div>
+          <div class="glass-card p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <i class="fas fa-university text-neon-green text-2xl"></i>
+              <h3 class="font-orbitron text-lg font-bold text-neon-green">VIT-Bhopal University</h3>
+            </div>
+            <p class="text-text-main font-rajdhani text-lg">B.Tech in Cyber Security &amp; Digital Forensics</p>
+            <p class="text-dark-pink font-bold font-orbitron mt-2">CGPA: 8.40</p>
+            <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt"></i> Bhopal, MP | 2024 – 2028</p>
+          </div>
+        </div>
+
+        <!-- Education 2 — Right -->
+        <div class="zigzag-item right fade-in-right mb-16 relative">
+          <div class="timeline-dot" style="top: 30px;"></div>
+          <div class="glass-card p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <i class="fas fa-school text-dark-pink text-2xl"></i>
+              <h3 class="font-orbitron text-lg font-bold text-dark-pink">City Montessori School</h3>
+            </div>
+            <p class="text-text-main font-rajdhani text-lg">LDA Campus</p>
+            <p class="text-neon-green font-bold mt-2">12th: 91.5% | 10th: 96.00%</p>
+            <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt"></i> Lucknow, UP | 2023 &amp; 2021</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS SECTION ===== -->
+  <section id="certifications" class="section-container py-24 px-6 md:px-16 lg:px-24">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center">
+        <h2 class="section-title neon-text-red fade-in-up mx-auto">Certifications</h2>
+      </div>
+
+      <div class="timeline mt-12 relative pb-8">
+        <div class="timeline-progress"></div>
+
+        <!-- Cert 1 — Left -->
+        <div class="zigzag-item left fade-in-left mb-16 relative">
+          <div class="timeline-dot" style="top: 24px;"></div>
+          <div class="glass-card p-5 cursor-pointer hover:border-neon-green" data-cert data-cert-title="Oracle Certified — Java SE 21 Professional Developer" data-cert-year="2026" data-cert-issuer="Oracle Certified" data-cert-desc="Earned Oracle Certified Professional: Java SE 21 Developer certification. Demonstrated advanced proficiency in Java SE 21 features including records, sealed classes, pattern matching, virtual threads, and the module system. Validates production-level expertise in object-oriented design, functional programming with streams, concurrency, and secure coding practices." data-cert-preview="Certificates/OracleDeveloper-1.png" data-cert-full="Certificates/OracleDeveloper.pdf">
+            <div class="flex items-center gap-3">
+              <i class="fab fa-java text-neon-green text-xl"></i>
+              <div>
+                <h3 class="font-rajdhani text-lg font-bold text-neon-green">Java SE 21 Professional Developer</h3>
+                <p class="text-text-muted text-sm">2026 — Oracle Certified &bull; <span class="text-neon-green">82%</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 2 — Right -->
+        <div class="zigzag-item right fade-in-right mb-16 relative">
+          <div class="timeline-dot" style="top: 24px;"></div>
+          <div class="glass-card p-5 cursor-pointer" data-cert data-cert-title="Oracle Certified — Java Foundations Associate" data-cert-year="2026" data-cert-issuer="Oracle Certified" data-cert-desc="Earned Oracle Certified Foundations Associate: Java certification. Validated foundational knowledge of Java programming including data types, control flow, object-oriented principles, arrays, exception handling, and basic algorithms. Establishes a solid base for advanced Java development and enterprise application design." data-cert-preview="Certificates/OracleFoundation-1.png" data-cert-full="Certificates/OracleFoundation.pdf">
+            <div class="flex items-center gap-3">
+              <i class="fab fa-java text-dark-pink text-xl"></i>
+              <div>
+                <h3 class="font-rajdhani text-lg font-bold text-dark-pink">Java Foundations Associate</h3>
+                <p class="text-text-muted text-sm">2026 — Oracle Certified &bull; <span class="text-neon-green">82%</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 3 — Left -->
+        <div class="zigzag-item left fade-in-left mb-16 relative">
+          <div class="timeline-dot" style="top: 24px;"></div>
+          <div class="glass-card p-5 cursor-pointer hover:border-neon-green" data-cert data-cert-title="Google Cybersecurity Professional Certificate" data-cert-year="2025" data-cert-issuer="Google / Coursera" data-cert-desc="Gained expertise in network security, Python automation for security tasks, Linux system administration, and security frameworks including NIST. Comprehensive 8-course program covering threat analysis, incident response, and security operations." data-cert-preview="Certificates/Coursera 0DK9WR3A7QQK-1.png" data-cert-full="Certificates/Coursera 0DK9WR3A7QQK.pdf">
+            <div class="flex items-center gap-3">
+              <i class="fab fa-google text-blood-red text-xl"></i>
+              <div>
+                <h3 class="font-rajdhani text-lg font-bold text-blood-red">Google Cybersecurity Professional</h3>
+                <p class="text-text-muted text-sm">2025 — Google / Coursera &bull; <span class="text-neon-green">88% Avg</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 4 — Right -->
+        <div class="zigzag-item right fade-in-right mb-16 relative">
+          <div class="timeline-dot" style="top: 24px;"></div>
+          <div class="glass-card p-5 cursor-pointer" data-cert data-cert-title="TryHackMe: Cybersecurity101 Path" data-cert-year="2026" data-cert-issuer="TryHackMe" data-cert-desc="Completed the full Cybersecurity101 learning path on TryHackMe. Currently ranked in the top 2% globally on the platform. Covered offensive and defensive security, networking, web exploitation, and privilege escalation." data-cert-preview="Certificates/THM-ALQ6BKFIU5-1.png" data-cert-full="Certificates/THM-ALQ6BKFIU5.pdf">
+            <div class="flex items-center gap-3">
+              <i class="fas fa-flag text-neon-purple text-xl"></i>
+              <div>
+                <h3 class="font-rajdhani text-lg font-bold text-neon-purple">TryHackMe Cybersecurity101</h3>
+                <p class="text-text-muted text-sm">2026 — Top 2% Globally</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 5 — Left -->
+        <div class="zigzag-item left fade-in-left mb-16 relative">
+          <div class="timeline-dot" style="top: 24px;"></div>
+          <div class="glass-card p-5 cursor-pointer" data-cert data-cert-title="CTF: Bug Trek" data-cert-year="VIT-Bhopal University" data-cert-issuer="VIT-Bhopal University" data-cert-desc="Awarded certificate for participating in the Bug Trek Capture The Flag challenge organized by VIT-Bhopal University. Demonstrated skills in vulnerability identification, web exploitation, and creative problem-solving." data-cert-preview="Cert/Bugtrek-1.png" data-cert-full="Cert/Bugtrek.pdf">
+            <div class="flex items-center gap-3">
+              <i class="fas fa-bug text-neon-green text-xl"></i>
+              <div>
+                <h3 class="font-rajdhani text-lg font-bold text-neon-green">CTF: Bug Trek</h3>
+                <p class="text-text-muted text-sm">VIT-Bhopal University &bull; <span class="text-neon-green">Placed Top 5</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 6 — Right -->
+        <div class="zigzag-item right fade-in-right mb-16 relative">
+          <div class="timeline-dot" style="top: 24px;"></div>
+          <div class="glass-card p-5 cursor-pointer" data-cert data-cert-title="CTF: HackSecure" data-cert-year="VIT-Bhopal University" data-cert-issuer="VIT-Bhopal University" data-cert-desc="Awarded certificate for the HackSecure CTF challenge at VIT-Bhopal University. Focused on network security, cryptographic challenges, and system exploitation techniques." data-cert-preview="Cert/HackSecure.png" data-cert-full="Cert/HackSecure.png">
+            <div class="flex items-center gap-3">
+              <i class="fas fa-shield-alt text-dark-pink text-xl"></i>
+              <div>
+                <h3 class="font-rajdhani text-lg font-bold text-dark-pink">CTF: HackSecure</h3>
+                <p class="text-text-muted text-sm">VIT-Bhopal University &bull; <span class="text-dark-pink">Placed Top 5</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 7 — Left -->
+        <div class="zigzag-item left fade-in-left mb-4 relative">
+          <div class="timeline-dot" style="top: 24px;"></div>
+          <div class="glass-card p-5 cursor-pointer" data-cert data-cert-title="CTF: Cyber Carnival" data-cert-year="VIT-Bhopal University" data-cert-issuer="VIT-Bhopal University" data-cert-desc="Awarded certificate for participation in the Cyber Carnival CTF event at VIT-Bhopal University. Competed in multi-domain security challenges spanning web, forensics, and reverse engineering." data-cert-preview="Cert/CyberCarnival.png" data-cert-full="Cert/CyberCarnival.png">
+            <div class="flex items-center gap-3">
+              <i class="fas fa-mask text-blood-red text-xl"></i>
+              <div>
+                <h3 class="font-rajdhani text-lg font-bold text-blood-red">CTF: Cyber Carnival</h3>
+                <p class="text-text-muted text-sm">VIT-Bhopal University &bull; <span class="text-blood-red">Placed Top 5</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATION MODAL ===== -->
+  <div id="cert-modal" class="modal-overlay">
+    <div class="modal-content glass-card p-0 overflow-hidden">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <!-- Preview Area -->
+      <div class="cert-preview-area" id="cert-preview-area">
+        <!-- Dynamically populated with <img> or <iframe> -->
+      </div>
+      <!-- Details Area -->
+      <div class="cert-details-area">
+        <h3 class="modal-title font-orbitron text-xl md:text-2xl font-bold text-neon-green mb-1"></h3>
+        <p class="cert-issuer font-rajdhani text-sm text-dark-pink mb-3"></p>
+        <div class="modal-body text-text-main text-sm leading-relaxed"></div>
+        <a href="#" class="btn-neon text-xs mt-5 inline-flex" id="cert-view-full" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View Full Certificate</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ACTIVITIES / EXPERIENCE ===== -->
+  <section id="activities" class="section-container py-24 px-6 md:px-16 lg:px-24">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center">
+        <h2 class="section-title neon-text fade-in-up mx-auto">Experience</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        <!-- Activity 1 -->
+        <div class="glass-card p-6 fade-in-left delay-1">
+          <div class="flex items-center gap-3 mb-4">
+            <i class="fas fa-running text-neon-green text-2xl"></i>
+            <div>
+              <h3 class="font-orbitron text-lg font-bold text-neon-green">Health-O-Tech (Run-Riot '26)</h3>
+              <p class="text-text-muted text-sm">Tech Team Member — April 2026</p>
+            </div>
+          </div>
+          <ul class="text-sm text-text-main space-y-2 list-none">
+            <li>• Managed official Strava club — created routes, defined race segments, onboarded hundreds of participants.</li>
+            <li>• Automated bulk participant comms via Excel &amp; Mail Merge.</li>
+            <li>• Deployed Luma for zero-friction on-site registration verification.</li>
+          </ul>
+        </div>
+
+        <!-- Activity 2 -->
+        <div class="glass-card p-6 fade-in-right delay-2">
+          <div class="flex items-center gap-3 mb-4">
+            <i class="fas fa-laptop-code text-dark-pink text-2xl"></i>
+            <div>
+              <h3 class="font-orbitron text-lg font-bold text-dark-pink">InLighnX Global Pvt Ltd</h3>
+              <p class="text-text-muted text-sm">Remote Intern — Aug 2025 – Nov 2025</p>
+            </div>
+          </div>
+          <ul class="text-sm text-text-main space-y-2 list-none">
+            <li>• Contributed to software engineering projects with secure development practices.</li>
+            <li>• Applied Python &amp; Java to identify and resolve vulnerabilities.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section-container py-24 px-6 md:px-16 lg:px-24">
+    <div class="max-w-2xl mx-auto">
+      <div class="text-center">
+        <h2 class="section-title neon-text-pink fade-in-up mx-auto">Contact Me</h2>
+      </div>
+
+      <div class="glass-card p-8 md:p-12 mt-8 fade-in-up delay-2">
+        <form id="contact-form" class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Email Input -->
+            <div class="flex flex-col space-y-2">
+              <label for="sender-email" class="font-mono text-sm text-text-muted">&gt; sender_email</label>
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-500"><i class="fas fa-at"></i></span>
+                <input type="email" id="sender-email" name="from_email" required placeholder="name@domain.com"
+                  class="w-full pl-10 pr-4 py-3 bg-black/40 border border-gray-700 rounded-lg text-text-main font-mono text-sm focus:border-neon-green focus:outline-none focus:shadow-[0_0_10px_rgba(57,255,20,0.3)] transition-all" />
+              </div>
+            </div>
+            <!-- Subject Input -->
+            <div class="flex flex-col space-y-2">
+              <label for="sender-subject" class="font-mono text-sm text-text-muted">&gt; message_subject</label>
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-500"><i class="fas fa-heading"></i></span>
+                <input type="text" id="sender-subject" name="subject" required placeholder="Project collaboration..."
+                  class="w-full pl-10 pr-4 py-3 bg-black/40 border border-gray-700 rounded-lg text-text-main font-mono text-sm focus:border-dark-pink focus:outline-none focus:shadow-[0_0_10px_rgba(255,20,147,0.3)] transition-all" />
+              </div>
+            </div>
+          </div>
+          <!-- Message text area -->
+          <div class="flex flex-col space-y-2">
+            <label for="sender-message" class="font-mono text-sm text-text-muted">&gt; system_payload (message)</label>
+            <div class="relative">
+              <span class="absolute top-3 left-3 text-gray-500"><i class="fas fa-paragraph"></i></span>
+              <textarea id="sender-message" name="message" required rows="5" placeholder="Enter message payload..."
+                class="w-full pl-10 pr-4 py-3 bg-black/40 border border-gray-700 rounded-lg text-text-main font-mono text-sm focus:border-neon-purple focus:outline-none focus:shadow-[0_0_10px_rgba(180,0,255,0.3)] transition-all resize-none"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn-neon w-full justify-center text-center"><i class="fas fa-paper-plane"></i> Transmit Payload</button>
+        </form>
+
+        <div class="flex items-center justify-center gap-6 mt-8 pt-6 border-t border-gray-800">
+          <a href="mailto:yadav22vikalp@gmail.com" class="text-text-muted hover:text-neon-green transition-colors" title="Email"><i class="fas fa-envelope text-xl"></i></a>
+          <a href="https://linkedin.com/in/yadavvikalppratap" target="_blank" rel="noopener" class="text-text-muted hover:text-dark-pink transition-colors" title="LinkedIn"><i class="fab fa-linkedin text-xl"></i></a>
+          <a href="https://github.com/vikalp1817243" target="_blank" rel="noopener" class="text-text-muted hover:text-neon-green transition-colors" title="GitHub"><i class="fab fa-github text-xl"></i></a>
+          <a href="https://tryhackme.com/p/v1k4l9" target="_blank" rel="noopener" class="text-text-muted hover:text-neon-purple transition-colors" title="TryHackMe"><i class="fas fa-shield-alt text-xl"></i></a>
+          <a href="https://cyberdefenders.org/p/0xv1k4l9" target="_blank" rel="noopener" class="text-text-muted hover:text-blood-red transition-colors" title="CyberDefenders"><i class="fas fa-user-shield text-xl"></i></a>
+          <a href="https://leetcode.com/u/v1k4l9" target="_blank" rel="noopener" class="text-text-muted hover:text-neon-green transition-colors" title="LeetCode"><i class="fas fa-code text-xl"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="section-container py-8 px-6 text-center border-t border-gray-800" role="contentinfo">
+    <div class="w-20 h-[2px] mx-auto mb-4 bg-gradient-to-r from-neon-green via-dark-pink to-blood-red rounded-full shadow-[0_0_10px_var(--neon-green)]"></div>
+    <p class="text-text-muted text-sm font-mono">&copy; 2026 Vikalp Pratap Yadav. All Rights Reserved.</p>
+    <div class="flex justify-center gap-4 mt-3">
+      <a href="https://github.com/vikalp1817243" target="_blank" rel="noopener" class="text-text-muted hover:text-neon-green transition-colors text-lg" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/yadavvikalppratap" target="_blank" rel="noopener" class="text-text-muted hover:text-dark-pink transition-colors text-lg" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:yadav22vikalp@gmail.com" class="text-text-muted hover:text-blood-red transition-colors text-lg" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://tryhackme.com/p/v1k4l9" target="_blank" rel="noopener" class="text-text-muted hover:text-neon-purple transition-colors text-lg" title="TryHackMe"><i class="fas fa-shield-alt"></i></a>
+      <a href="https://cyberdefenders.org/p/0xv1k4l9" target="_blank" rel="noopener" class="text-text-muted hover:text-blood-red transition-colors text-lg" title="CyberDefenders"><i class="fas fa-user-shield"></i></a>
+      <a href="https://leetcode.com/u/v1k4l9" target="_blank" rel="noopener" class="text-text-muted hover:text-neon-green transition-colors text-lg" title="LeetCode"><i class="fas fa-code"></i></a>
+    </div>
+  </footer>
+
+  <!-- ===== CDN SCRIPTS ===== -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.6/dist/purify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>emailjs.init("YOUR_PUBLIC_KEY");</script> <!-- TODO: Replace with your EmailJS public key -->
+
+  <!-- App Scripts -->
+  <script src="js/particles-config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
