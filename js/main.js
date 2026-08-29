@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initScrollAnimations();
   initTimelineProgress();
   initModal();
-  initSkillToggle();
 });
 
 /* ---------- Navbar: scroll transparency + active section + hamburger ---------- */
@@ -262,28 +261,6 @@ function initModal() {
   });
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeModal();
-  });
-}
-
-/* ---------- Skill View Toggle (Marquee ↔ Bubble) ---------- */
-function initSkillToggle() {
-  const toggleBtn = document.getElementById("skill-toggle");
-  const marqueeView = document.getElementById("skills-marquee");
-  const bubbleView = document.getElementById("skills-bubble");
-
-  if (!toggleBtn || !marqueeView || !bubbleView) return;
-
-  toggleBtn.addEventListener("click", () => {
-    const isMarquee = !marqueeView.classList.contains("hidden");
-    if (isMarquee) {
-      marqueeView.classList.add("hidden");
-      bubbleView.classList.remove("hidden");
-      toggleBtn.textContent = "Switch to Marquee";
-    } else {
-      marqueeView.classList.remove("hidden");
-      bubbleView.classList.add("hidden");
-      toggleBtn.textContent = "Switch to Bubbles";
-    }
   });
 }
 
